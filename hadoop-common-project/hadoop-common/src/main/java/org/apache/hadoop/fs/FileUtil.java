@@ -719,6 +719,7 @@ public class FileUtil {
         Shell.WINDOWS ? "cmd" : "bash",
         Shell.WINDOWS ? "/c" : "-c",
         command);
+    LOG.info("Running Command = {}", command); 
     Process process = builder.start();
     int exitCode;
     try {
